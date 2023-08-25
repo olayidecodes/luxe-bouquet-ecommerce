@@ -1,0 +1,64 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    .footer__box{
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;
+        border: none;
+        gap: 1rem;
+
+        span {
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.2rem;
+            letter-spacing: .25px;
+        }
+
+        .footer__title h1 {
+            font-size: 1.45rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: var(--color-gray);
+            margin-bottom: .5rem;
+        }
+
+        .footer__contact_box{
+            display: flex;
+            flex-direction: column;
+            gap: .1rem;
+
+             h3 {
+                font-size: .8rem;
+                font-weight: 400;
+                color: var(--color-gray);
+             }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .footer__links_section {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            font-weight: normal;
+        }
+
+        .contacts__section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+    }
+    .footer__box:not(:last-child) {
+        border-right: 1px solid var(--color-black);
+    }
+}
