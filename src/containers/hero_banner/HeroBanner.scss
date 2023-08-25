@@ -1,3 +1,52 @@
 .hero__banner {
     position: relative;
+    min-height: 80vh;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .top {
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--color-black);
+            :nth-child(2) {
+                ::after {
+                    content: 'R';
+                    font-size: 1.5rem;
+                    position: absolute;
+                    top: 10px;
+                    border: 2px solid var(--color-black);
+                    padding: .15rem .6rem;
+                    border-radius: 50%;
+                    margin-left: .3rem;
+                }
+            }
+            h1 {
+                font-size: 4rem;
+                font-weight: 500;
+                opacity: 1; 
+                transform:translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+            }
+
+            p {
+                max-width: 30rem;
+            }
+        }
+        .bottom {
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                max-height: 15rem;
+
+            }
+
+            p {
+                border-left: 1px solid var(--color-black);
+                margin-left: 1rem;
+                padding-left: 1rem;
+            }
+        }
+    }
 }
