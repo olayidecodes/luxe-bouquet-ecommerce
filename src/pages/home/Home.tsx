@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroBanner from '../../containers/hero_banner/HeroBanner'
 
 const Home = () => {
