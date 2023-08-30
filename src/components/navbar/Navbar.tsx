@@ -6,7 +6,7 @@ import './Navbar.scss'
 const Navbar = () => {
   return (
     <div>
-      <nav className="container__border navbar">
+      <nav className="container__border fixed navbar">
         <div className="left">
           <Link className="link" to='/shop'>Shop</Link>
           <Link className="link" to='/contact'>Contact</Link>

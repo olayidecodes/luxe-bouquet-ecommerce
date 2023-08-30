@@ -31,11 +31,29 @@ a {
 }
 
 .app__container {
-  padding: 5vw;
+  padding: 5vw 0 5vw 4vw;
   position: relative;
 }
 
 .container__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__section {
+  border-left: 1px solid var(--color-black);
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+.sticky {
+  position: sticky;
 }

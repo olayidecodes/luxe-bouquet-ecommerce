@@ -1,4 +1,28 @@
+import GridContent from '../../components/grid_content/GridContent'
 import './HeroBanner.scss'
+
+const contents = [
+  {
+    name: 'Fresh Flowers',
+    image: '/images/fresh_flowers.png'
+  },
+  {
+    name: 'Dried Flowers',
+    image: '/images/dried_flowers.png'
+  },
+  {
+    name: 'Fresheners',
+    image: '/images/fresheners.png'
+  },
+  {
+    name: 'Aroma Candles',
+    image: '/images/aroma_candles.png'
+  },
+  {
+    name: 'Live Plants',
+    image: '/images/live_plants.png'
+  }
+]
 
 const HeroBanner = () => {
   return (
@@ -14,8 +38,12 @@ const HeroBanner = () => {
             <p>Experience the joy of giving with our modern floral studio. Order online and send flowers, plants and gifts today</p>
         </div>
       </div>
-      <div className="right">
-
+      <div className="right grid__section">
+        {
+          contents.map((content) => (
+            <GridContent name={content.name} image={content.image}/>
+          ))
+        }
       </div>
     </div>
   )
