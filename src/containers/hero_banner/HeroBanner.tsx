@@ -29,20 +29,6 @@ const contents = [
   }
 ]
 
-const shops = [
-  {
-    title: 'Fresh Flowers',
-  },
-  {
-    image: '/images/fresh_flowers.png'
-  },
-  {
-    title: 'Dried Flowers'
-  },
-  {
-    image: '/images/dried_flowers.png'
-  }
-]
 
 const HeroBanner = () => {
   return (
@@ -64,18 +50,6 @@ const HeroBanner = () => {
             <GridContent property={content.property} name={content.name} image={content.image}/>
           ))
         }
-        {/* {
-          shops.map((shop) => (
-            <div className='right_grid'>
-              <div>
-                <h1>{shop.title}</h1>
-              </div>
-              <div>
-                <img src={shop.image} />
-              </div>
-            </div>
-          ))
-        } */}
       </div>
     </div>
   )
