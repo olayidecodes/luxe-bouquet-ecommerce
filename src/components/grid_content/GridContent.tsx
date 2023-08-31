@@ -4,11 +4,12 @@ import './GridContent.scss'
 interface GridContentProps {
     name: string
     image: string
+    property: string
 }
 
-const GridContent: React.FC<GridContentProps> = ({name, image}) => {
+const GridContent: React.FC<GridContentProps> = ({name, image, property}) => {
   return (
-    <div className='grid_content'>
+    <div className={property}>
       <div className="left_column">
         <h1>{name}</h1>
         <p>Shop</p>
