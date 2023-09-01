@@ -1,5 +1,6 @@
 import About from '../../containers/about/About'
 import ChooseUs from '../../containers/choose_us/ChooseUs'
+import ContactSection from '../../containers/contact_section/ContactSection'
 import HeroBanner from '../../containers/hero_banner/HeroBanner'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroBanner />
       <About />
       <ChooseUs />
+      <ContactSection />
     </div>
   )
 }

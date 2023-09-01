@@ -1,0 +1,88 @@
+.container__grid {
+    .left {
+        .top {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            p {
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+            .reachus {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            text-align: center;
+
+            .box:nth-child(1n) {
+                border-right: 1px solid var(--color-black);
+            }
+
+            .box {
+                width: 50%;
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding: 1rem;
+                    border-bottom: 1px solid var(--color-black);
+                }
+
+                .contents {
+                    min-height: 17rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .content {
+                        display: flex;
+                        gap: .5rem;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .bottom {
+            position: relative;
+            border-top: 1px solid var(--color-black);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding: 1.2rem;
+                }
+
+            }
+
+            .content:nth-child(1) {
+                border-right: 1px solid var(--color-black);
+            }
+           
+        }
+        
+    }
+}
