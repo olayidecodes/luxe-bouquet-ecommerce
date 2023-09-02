@@ -1,8 +1,16 @@
 .decor{
+    color: var(--color-white);
+    height: 50vw;
+    background-image: linear-gradient(rgba(18, 18, 18, .35), rgba(18, 18, 18, .35)), url('images/background.jpg');
+    background-position: 0 0, 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: fit-content;
+    text-align: center;
     
     span {
         text-transform: uppercase;
