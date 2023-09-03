@@ -1,4 +1,6 @@
 import Textra from 'react-textra'
+import WhiteButton from '../button/WhiteButton'
+import './Slider.scss'
 
 const data = [
   'I recently ordered flowers from Kyiv LuxeBouquets and I was extremely impressed with the quality of the product and the speed of delivery. The flowers were beautiful and fresh, and they arrived in perfect condition. The customer service was also excellent. They were very helpful and answered all my questions promptly. I would highly recommend Kyiv LuxeBouquets to anyone looking for high-quality flowers delivered quickly and with great customer service.',
@@ -11,13 +13,23 @@ const data = [
 
 const Slider = () => {
   return (
-     <div>
+     <div className='testimonials'>
+      <div className="top">
+        <img src='/images/google.png'/>
+        <p>Reviews</p>
+        <h1>Our Clients Say</h1>
+      </div>
+      <div className='app__slider'>
        <Textra 
         effect='flash' 
         duration={1000}
         stopDuartion={4000} 
         data={data} 
         />
+      </div>
+        <div className="bottom">
+          <WhiteButton title='Read Reviews'/>
+        </div>
      </div>
    ) 
 }
